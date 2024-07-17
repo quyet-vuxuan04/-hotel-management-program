@@ -63,7 +63,7 @@ int main(){
 		cin >> key;
 		switch(key){
 			case 1:
-				
+				điền nè
 				break;
 			case 2:
 				
