@@ -1,0 +1,134 @@
+#include<conio.h>
+#include<stdio.h>
+#include<iostream>
+#include<string.h>
+#define MAX 100
+
+using namespace std;
+
+
+//Khai bao cau truc du lieu khach hang trong ds
+struct KhachHang {
+	int MaKH;
+	char TenKH[30];
+	char GioiTInh[5];
+	int NamSinh;
+	char SDT[11];
+	char DiaCHi[30];
+};
+typedef KhachHang KH;
+
+void printLine(int n);
+void nhapThongTinKH (KH &kh, int id);
+void nhapKH(KH a[], int id, int n);
+void capNhatThongTin(KH &kh);
+void  chapNhatKH(KH a[], int id, int n);
+int xoaTheoID(KH a[], int id, int n);
+void timKiemTheoTen(KH a[], char ten[], int n);
+
+int idLonNhat(KH a[], int n);
+void sapxepTheoMaKH(KH a[], int n);
+void sapxepTheoTen(KH a[], int n);
+void showKhachHang(KH a[], char ten[], int n);
+int docFile(KH a[], char fileName[]);
+void pressAnykey();
+
+//Ham main
+
+int main(){
+	int key;
+	char fileName[] = "KhachHang.txt";
+	KH arrayKH[MAX];
+	int soluongKH = 0;
+	int idCount = 0;
+	
+	//Nhapsanhsachkhachhangtufile
+	soluongKH = docFile(arrayKH, fileName);
+	idCount = idLonNhat(arrayKH, soluongKH);
+	
+	while(true){
+		cout << "			CHUONG TRINH QUAN LY KHACH SAN				\n";
+		cout << "*******************************************************\n";
+		cout << "1. THEM KHACH HANG\n";
+		cout << "2. CAP NHAT THONG TIN KHACH HANG BOI MA KHACH HANG\n";
+		cout << "3. XOA KHACH HANG BOI MA KHACH HANG\n";
+		cout << "4. TIM KIEM KHACH HANG THEO TEN\n";
+		cout << "5. SAP XEP KHACH HANG THEO MA SO\n";
+		cout << "6. SAP XEP KHACH HANG THEO TEN\n";
+		cout << "7. HIEN THI DANH SACH KHACH HANG\n";
+		cout << "8. GHI LAI DANH SACH KHACH HANG VAO FILE\n";
+		cout << "0. THOAT CHUONG TRINH\n";
+		cout << "********************************************************\n";
+		cout << "				>>>>>> Nhap lua chon cua ban: ";
+		cin >> key;
+		switch(key){
+			case 1:
+				
+				break;
+			case 2:
+				
+				break;
+			case 3:
+				
+				break;
+			case 4:
+				
+				break;
+			case 5:
+				
+				break;
+			case 6:
+				
+				break;
+			case 7:
+				
+				break;
+			case 8:
+				
+				break;
+			case 0:
+				
+				return 0;
+			default:
+				cout << "\nKhong co chuc nang nay";
+				cout << "\nHAy chon lai trong menu";
+				pressAnykey();
+				break;
+				
+			
+		}			
+	}
+}
+//Ham nhap thong tin khach hang
+//Ham nhap khach hang
+//Ham cap nhat thong tin khach hang
+//Ham cam nhat khach hang
+// ham xoa khach hang theo ma so
+// ham hien thi danh sach khach hnag
+//ham sap xep khach hang theo ma tang dan
+///ham sap xep khach hang thoeo ten theo thu tu tang dan
+//ham ma so lon nhat
+//ham doc file khach hang
+//ham ghi file khach hang
+//ham in danh sach khach hang
+//ham lua chon phim
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
